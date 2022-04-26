@@ -1,0 +1,90 @@
+.container {
+    background-color: blue;
+
+    .navigation {
+        background-color: red;
+
+        min-height: 7vh;
+    }
+
+    .slider {
+        height: 200px;
+        background-color: pink;
+    }
+
+    .main-options {
+        .diet {
+            background-color: aqua;
+            height: 30vh;
+            max-height: 300px;
+
+
+            img {}
+        }
+
+        .shop-list {
+            background-color: rebeccapurple;
+            height: 30vh;
+            max-height: 300px;
+
+
+            img {}
+        }
+
+        .meals {
+            background-color: royalblue;
+            height: 30vh;
+            max-height: 300px;
+
+
+            img {}
+        }
+
+        .warehouse {
+            background-color: green;
+            height: 30vh;
+            max-height: 300px;
+
+
+            img {}
+        }
+    }
+
+    .contacts {
+        .contact {
+            height: 200px;
+            background-color: gray;
+        }
+
+        .map {
+            background-color: brown;
+        }
+    }
+
+
+
+    .motto {
+        height: 200px;
+        background-color: rgb(6, 168, 46);
+    }
+
+    .footer {
+        min-height: 50px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .slider {
+        height: 50vh !important;
+        max-height: 500px;
+    }
+
+    .motto {
+        height: 250px !important;
+    }
+
+    .contact {
+        min-height: 40vh !important;
+    }
+}
