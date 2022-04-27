@@ -156,9 +156,59 @@ template, [hidden] {
   background-color: #00f;
 }
 
-.container .navigation {
-  min-height: 7vh;
+.container .navigation-mobile {
+  min-height: 6vh;
   background-color: red;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+
+.container .navigation-mobile .logo {
+  width: 40%;
+  background-color: #ff0;
+}
+
+.container .navigation-mobile .hamburger-menu {
+  width: 60%;
+  background-color: #7fffd4;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.container .navigation-mobile .container-menu {
+  width: 60%;
+  background-color: #0590a8;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+
+.container .navigation {
+  min-height: 6vh;
+  background-color: red;
+  justify-content: space-between;
+}
+
+.container .navigation .logo {
+  width: 10%;
+  background-color: #ff0;
+}
+
+.container .navigation .container-menu {
+  width: 60%;
+  background-color: #02e659;
+  justify-content: space-around;
+  margin-top: auto;
+  display: flex;
+}
+
+.container .navigation .container-menu .menu-item {
+  list-style: none;
+}
+
+.container .navigation .container-menu .menu-item a:link {
+  text-decoration: none;
 }
 
 .container .slider {
