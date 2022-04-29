@@ -3,7 +3,7 @@
 
     .navigation-mobile {
         background-color: red;
-        min-height: 6vh;
+        height: 40px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -44,7 +44,7 @@
 
     .navigation {
         background-color: red;
-        min-height: 6vh;
+        height: 60px;
          justify-content: space-between;
 
 
@@ -83,6 +83,27 @@
     }
 
     .main-options {
+        display: flex;
+        justify-content: space-between;
+
+
+        div { 
+            border: 2px solid black;
+            border-radius: 50px;
+            width: 24%;
+            
+            
+            img{
+            width: 50%;
+            // max-width: 100px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }}
+        
+       
+
         .diet {
             background-color: aqua;
             height: 30vh;
@@ -147,6 +168,14 @@
     }
 
     .contact {
-        min-height: 40vh !important;
+        height: 350px !important;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+   
+    .contact {
+        height: 400px !important;
     }
 }

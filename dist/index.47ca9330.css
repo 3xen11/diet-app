@@ -157,7 +157,7 @@ template, [hidden] {
 }
 
 .container .navigation-mobile {
-  min-height: 6vh;
+  height: 40px;
   background-color: red;
   flex-direction: row;
   justify-content: space-between;
@@ -185,7 +185,7 @@ template, [hidden] {
 }
 
 .container .navigation {
-  min-height: 6vh;
+  height: 60px;
   background-color: red;
   justify-content: space-between;
 }
@@ -214,6 +214,25 @@ template, [hidden] {
 .container .slider {
   height: 200px;
   background-color: pink;
+}
+
+.container .main-options {
+  justify-content: space-between;
+  display: flex;
+}
+
+.container .main-options div {
+  width: 24%;
+  border: 2px solid #000;
+  border-radius: 50px;
+}
+
+.container .main-options div img {
+  width: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container .main-options .diet {
@@ -269,7 +288,13 @@ template, [hidden] {
   }
 
   .contact {
-    min-height: 40vh !important;
+    height: 350px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact {
+    height: 400px !important;
   }
 }
 
