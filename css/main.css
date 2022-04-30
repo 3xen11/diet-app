@@ -338,122 +338,139 @@ template {
   display: none; }
 
 /* line 1, sass/pages/_home-page.scss */
+body {
+  background-image: url("https://images.pexels.com/photos/6942034/pexels-photo-6942034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); }
+
+/* line 5, sass/pages/_home-page.scss */
 .container {
-  background-color: blue; }
-  /* line 4, sass/pages/_home-page.scss */
+  background-color: white; }
+  /* line 8, sass/pages/_home-page.scss */
   .container .navigation-mobile {
-    background-color: red;
     height: 40px;
     display: flex;
     justify-content: space-between;
     flex-direction: row; }
-    /* line 11, sass/pages/_home-page.scss */
+    /* line 15, sass/pages/_home-page.scss */
     .container .navigation-mobile .logo {
       background-color: yellow;
       width: 40%; }
-    /* line 15, sass/pages/_home-page.scss */
+    /* line 20, sass/pages/_home-page.scss */
     .container .navigation-mobile .hamburger-menu {
-      background-color: aquamarine;
       width: 60%;
       display: flex;
       justify-content: flex-end; }
-    /* line 28, sass/pages/_home-page.scss */
+    /* line 30, sass/pages/_home-page.scss */
     .container .navigation-mobile .container-menu {
       width: 60%;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
-      background-color: #0590a8; }
-  /* line 45, sass/pages/_home-page.scss */
+      justify-content: space-around; }
+  /* line 42, sass/pages/_home-page.scss */
   .container .navigation {
-    background-color: red;
     height: 60px;
     justify-content: space-between; }
-    /* line 51, sass/pages/_home-page.scss */
+    /* line 48, sass/pages/_home-page.scss */
     .container .navigation .logo {
       background-color: yellow;
       width: 10%; }
-    /* line 57, sass/pages/_home-page.scss */
+    /* line 53, sass/pages/_home-page.scss */
     .container .navigation .container-menu {
       width: 60%;
       display: flex;
       margin-top: auto;
-      justify-content: space-around;
-      background-color: #02e659; }
-      /* line 65, sass/pages/_home-page.scss */
+      justify-content: space-around; }
+      /* line 61, sass/pages/_home-page.scss */
       .container .navigation .container-menu .menu-item {
         list-style: none; }
-      /* line 71, sass/pages/_home-page.scss */
+      /* line 67, sass/pages/_home-page.scss */
       .container .navigation .container-menu .menu-item a:link {
         text-decoration: none; }
-  /* line 80, sass/pages/_home-page.scss */
-  .container .slider {
-    height: 200px;
-    background-color: pink; }
-  /* line 85, sass/pages/_home-page.scss */
+  /* line 75, sass/pages/_home-page.scss */
+  .container #carouselExampleControls {
+    width: 102%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+  /* line 82, sass/pages/_home-page.scss */
   .container .main-options {
     display: flex;
-    justify-content: space-between; }
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
     /* line 90, sass/pages/_home-page.scss */
     .container .main-options div {
+      margin: 20px;
       border: 2px solid black;
       border-radius: 50px;
-      width: 24%; }
-      /* line 96, sass/pages/_home-page.scss */
+      padding: 0; }
+      /* line 97, sass/pages/_home-page.scss */
       .container .main-options div img {
-        width: 50%;
+        width: 40%;
         position: relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
-    /* line 107, sass/pages/_home-page.scss */
+    /* line 108, sass/pages/_home-page.scss */
     .container .main-options .diet {
       background-color: aqua;
       height: 30vh;
       max-height: 300px; }
-    /* line 114, sass/pages/_home-page.scss */
+    /* line 116, sass/pages/_home-page.scss */
     .container .main-options .shop-list {
       background-color: rebeccapurple;
       height: 30vh;
       max-height: 300px; }
-    /* line 121, sass/pages/_home-page.scss */
+    /* line 124, sass/pages/_home-page.scss */
     .container .main-options .meals {
       background-color: royalblue;
       height: 30vh;
       max-height: 300px; }
-    /* line 128, sass/pages/_home-page.scss */
+    /* line 132, sass/pages/_home-page.scss */
     .container .main-options .warehouse {
       background-color: green;
       height: 30vh;
       max-height: 300px; }
-  /* line 137, sass/pages/_home-page.scss */
+  /* line 144, sass/pages/_home-page.scss */
+  .container .motto {
+    height: 200px; }
+    /* line 148, sass/pages/_home-page.scss */
+    .container .motto h3 {
+      text-align: center;
+      line-height: 240px; }
+  /* line 155, sass/pages/_home-page.scss */
   .container .contacts .contact {
     height: 200px;
     background-color: gray; }
-  /* line 142, sass/pages/_home-page.scss */
+  /* line 160, sass/pages/_home-page.scss */
   .container .contacts .map {
     background-color: brown; }
-  /* line 149, sass/pages/_home-page.scss */
-  .container .motto {
-    height: 200px;
-    background-color: #06a82e; }
-  /* line 154, sass/pages/_home-page.scss */
+  /* line 166, sass/pages/_home-page.scss */
   .container .footer {
     min-height: 50px; }
 
 @media screen and (min-width: 768px) {
-  /* line 161, sass/pages/_home-page.scss */
+  /* line 173, sass/pages/_home-page.scss */
   .slider {
     height: 50vh !important;
     max-height: 500px; }
-  /* line 166, sass/pages/_home-page.scss */
+  /* line 178, sass/pages/_home-page.scss */
   .motto {
     height: 250px !important; }
-  /* line 170, sass/pages/_home-page.scss */
+  /* line 182, sass/pages/_home-page.scss */
   .contact {
     height: 350px !important; } }
 
 @media screen and (min-width: 992px) {
-  /* line 178, sass/pages/_home-page.scss */
+  /* line 190, sass/pages/_home-page.scss */
   .contact {
-    height: 400px !important; } }
+    height: 400px !important; }
+  /* line 195, sass/pages/_home-page.scss */
+  .main-options div {
+    max-width: 380px;
+    margin: 20px; } }
+
+@media screen and (min-width: 1200px) {
+  /* line 204, sass/pages/_home-page.scss */
+  .main-options div {
+    max-width: 270px;
+    margin: 20px 0px; } }

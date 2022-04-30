@@ -152,13 +152,16 @@ template, [hidden] {
   display: none;
 }
 
+body {
+  background-image: url("https://images.pexels.com/photos/6942034/pexels-photo-6942034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
 .container {
-  background-color: #00f;
+  background-color: #fff;
 }
 
 .container .navigation-mobile {
   height: 40px;
-  background-color: red;
   flex-direction: row;
   justify-content: space-between;
   display: flex;
@@ -171,14 +174,12 @@ template, [hidden] {
 
 .container .navigation-mobile .hamburger-menu {
   width: 60%;
-  background-color: #7fffd4;
   justify-content: flex-end;
   display: flex;
 }
 
 .container .navigation-mobile .container-menu {
   width: 60%;
-  background-color: #0590a8;
   flex-direction: row;
   justify-content: space-around;
   display: flex;
@@ -186,7 +187,6 @@ template, [hidden] {
 
 .container .navigation {
   height: 60px;
-  background-color: red;
   justify-content: space-between;
 }
 
@@ -197,7 +197,6 @@ template, [hidden] {
 
 .container .navigation .container-menu {
   width: 60%;
-  background-color: #02e659;
   justify-content: space-around;
   margin-top: auto;
   display: flex;
@@ -211,24 +210,29 @@ template, [hidden] {
   text-decoration: none;
 }
 
-.container .slider {
-  height: 200px;
-  background-color: pink;
+.container #carouselExampleControls {
+  width: 102%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container .main-options {
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   display: flex;
 }
 
 .container .main-options div {
-  width: 24%;
   border: 2px solid #000;
   border-radius: 50px;
+  margin: 20px;
+  padding: 0;
 }
 
 .container .main-options div img {
-  width: 50%;
+  width: 40%;
   position: relative;
   top: 50%;
   left: 50%;
@@ -259,6 +263,15 @@ template, [hidden] {
   background-color: green;
 }
 
+.container .motto {
+  height: 200px;
+}
+
+.container .motto h3 {
+  text-align: center;
+  line-height: 240px;
+}
+
 .container .contacts .contact {
   height: 200px;
   background-color: gray;
@@ -266,11 +279,6 @@ template, [hidden] {
 
 .container .contacts .map {
   background-color: brown;
-}
-
-.container .motto {
-  height: 200px;
-  background-color: #06a82e;
 }
 
 .container .footer {
@@ -295,6 +303,18 @@ template, [hidden] {
 @media screen and (min-width: 992px) {
   .contact {
     height: 400px !important;
+  }
+
+  .main-options div {
+    max-width: 380px;
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-options div {
+    max-width: 270px;
+    margin: 20px 0;
   }
 }
 
