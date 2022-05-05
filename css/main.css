@@ -337,140 +337,195 @@ template {
 [hidden] {
   display: none; }
 
-/* line 1, sass/pages/_home-page.scss */
+@use "../components/navigation";
+@use "../components/footer";
+@use "../components/wrapper";
+/* line 5, sass/pages/_home-page.scss */
 body {
   background-image: url("https://images.pexels.com/photos/6942034/pexels-photo-6942034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); }
-
-/* line 5, sass/pages/_home-page.scss */
-.container {
-  background-color: white; }
   /* line 8, sass/pages/_home-page.scss */
-  .container .navigation-mobile {
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row; }
-    /* line 15, sass/pages/_home-page.scss */
-    .container .navigation-mobile .logo {
-      background-color: yellow;
-      width: 40%; }
-    /* line 20, sass/pages/_home-page.scss */
-    .container .navigation-mobile .hamburger-menu {
-      width: 60%;
-      display: flex;
-      justify-content: flex-end; }
-    /* line 30, sass/pages/_home-page.scss */
-    .container .navigation-mobile .container-menu {
-      width: 60%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-  /* line 42, sass/pages/_home-page.scss */
-  .container .navigation {
-    height: 60px;
-    justify-content: space-between; }
-    /* line 48, sass/pages/_home-page.scss */
-    .container .navigation .logo {
-      background-color: yellow;
-      width: 10%; }
-    /* line 53, sass/pages/_home-page.scss */
-    .container .navigation .container-menu {
-      width: 60%;
-      display: flex;
-      margin-top: auto;
-      justify-content: space-around; }
-      /* line 61, sass/pages/_home-page.scss */
-      .container .navigation .container-menu .menu-item {
-        list-style: none; }
-      /* line 67, sass/pages/_home-page.scss */
-      .container .navigation .container-menu .menu-item a:link {
-        text-decoration: none; }
-  /* line 75, sass/pages/_home-page.scss */
-  .container #carouselExampleControls {
-    width: 102%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%); }
-  /* line 82, sass/pages/_home-page.scss */
-  .container .main-options {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around; }
-    /* line 90, sass/pages/_home-page.scss */
-    .container .main-options div {
-      margin: 20px;
-      border: 2px solid black;
-      border-radius: 50px;
-      padding: 0; }
-      /* line 97, sass/pages/_home-page.scss */
-      .container .main-options div img {
-        width: 40%;
+  body header {
+    height: calc(100vh - 60px); }
+    /* line 11, sass/pages/_home-page.scss */
+    body header .motto-photo {
+      background-image: url("https://images.pexels.com/photos/1400172/pexels-photo-1400172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); }
+      /* line 14, sass/pages/_home-page.scss */
+      body header .motto-photo .motto {
         position: relative;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-    /* line 108, sass/pages/_home-page.scss */
-    .container .main-options .diet {
-      background-color: aqua;
-      height: 30vh;
-      max-height: 300px; }
-    /* line 116, sass/pages/_home-page.scss */
-    .container .main-options .shop-list {
-      background-color: rebeccapurple;
-      height: 30vh;
-      max-height: 300px; }
-    /* line 124, sass/pages/_home-page.scss */
-    .container .main-options .meals {
-      background-color: royalblue;
-      height: 30vh;
-      max-height: 300px; }
-    /* line 132, sass/pages/_home-page.scss */
-    .container .main-options .warehouse {
-      background-color: green;
-      height: 30vh;
-      max-height: 300px; }
-  /* line 144, sass/pages/_home-page.scss */
-  .container .motto {
-    height: 200px; }
-    /* line 148, sass/pages/_home-page.scss */
-    .container .motto h3 {
+        transform: translateY(-50%);
+        font-size: 2.5rem;
+        text-align: center;
+        color: white; }
+    /* line 24, sass/pages/_home-page.scss */
+    body header .carousel {
+      padding: 0; }
+  /* line 29, sass/pages/_home-page.scss */
+  body #options-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 100px; }
+    /* line 37, sass/pages/_home-page.scss */
+    body #options-container .option {
+      background-color: white;
+      height: 200px;
+      border: 2px solid black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center; }
+      /* line 46, sass/pages/_home-page.scss */
+      body #options-container .option a {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: black; }
+        /* line 54, sass/pages/_home-page.scss */
+        body #options-container .option a img {
+          height: 50%; }
+        /* line 58, sass/pages/_home-page.scss */
+        body #options-container .option a span {
+          margin-top: 20px;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          font-weight: bold; }
+    /* line 69, sass/pages/_home-page.scss */
+    body #options-container .warehouse {
+      margin-bottom: 20px; }
+  /* line 74, sass/pages/_home-page.scss */
+  body .articles {
+    margin-top: 100px; }
+    /* line 78, sass/pages/_home-page.scss */
+    body .articles .article-photo {
+      padding: 0; }
+    /* line 82, sass/pages/_home-page.scss */
+    body .articles .articles-container {
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      /* line 89, sass/pages/_home-page.scss */
+      body .articles .articles-container .hwdp h3 {
+        text-align: center;
+        margin: 20px 0; }
+      /* line 94, sass/pages/_home-page.scss */
+      body .articles .articles-container .hwdp ul {
+        list-style: none; }
+        /* line 97, sass/pages/_home-page.scss */
+        body .articles .articles-container .hwdp ul li {
+          line-height: 40px; }
+          /* line 100, sass/pages/_home-page.scss */
+          body .articles .articles-container .hwdp ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold; }
+      /* line 110, sass/pages/_home-page.scss */
+      body .articles .articles-container .articles-more {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        justify-content: flex-end; }
+        /* line 119, sass/pages/_home-page.scss */
+        body .articles .articles-container .articles-more span {
+          margin: 20px 20px; }
+  /* line 126, sass/pages/_home-page.scss */
+  body .contest {
+    margin-top: 100px;
+    position: relative;
+    min-height: 50vh;
+    width: 100%;
+    background: 50% 50% / cover; }
+    /* line 135, sass/pages/_home-page.scss */
+    body .contest .title {
+      padding: 0;
+      background-image: url("../../src/img/spider-1.jpg");
+      background-attachment: fixed;
+      background-size: cover; }
+  /* line 143, sass/pages/_home-page.scss */
+  body .about-us {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    gap: 30px; }
+    /* line 149, sass/pages/_home-page.scss */
+    body .about-us .aboutus-title {
       text-align: center;
-      line-height: 240px; }
-  /* line 155, sass/pages/_home-page.scss */
-  .container .contacts .contact {
-    height: 200px;
-    background-color: gray; }
-  /* line 160, sass/pages/_home-page.scss */
-  .container .contacts .map {
-    background-color: brown; }
-  /* line 166, sass/pages/_home-page.scss */
-  .container .footer {
-    min-height: 50px; }
-
-@media screen and (min-width: 768px) {
+      font-size: 3rem; }
+    /* line 154, sass/pages/_home-page.scss */
+    body .about-us .employee {
+      display: flex;
+      flex-direction: column; }
+      /* line 158, sass/pages/_home-page.scss */
+      body .about-us .employee img {
+        border-radius: 50%; }
+      /* line 162, sass/pages/_home-page.scss */
+      body .about-us .employee span {
+        text-align: center;
+        font-weight: bold;
+        margin: 10px 0 30px 0;
+        font-size: 1.4rem; }
   /* line 173, sass/pages/_home-page.scss */
-  .slider {
-    height: 50vh !important;
-    max-height: 500px; }
+  body #contact h3 {
+    margin-top: 20px;
+    text-align: center; }
   /* line 178, sass/pages/_home-page.scss */
-  .motto {
-    height: 250px !important; }
-  /* line 182, sass/pages/_home-page.scss */
-  .contact {
-    height: 350px !important; } }
+  body #contact form {
+    display: flex;
+    flex-direction: column; }
+    /* line 182, sass/pages/_home-page.scss */
+    body #contact form label {
+      margin-top: 20px; }
+    /* line 186, sass/pages/_home-page.scss */
+    body #contact form input {
+      border-radius: 10px;
+      height: 2.5rem; }
+    /* line 191, sass/pages/_home-page.scss */
+    body #contact form .message-input {
+      height: 100px;
+      margin: 20px 0; }
+    /* line 196, sass/pages/_home-page.scss */
+    body #contact form .submit-button {
+      margin: 0 auto 20px auto; }
+  /* line 202, sass/pages/_home-page.scss */
+  body #map {
+    height: 65vh;
+    background-color: brown; }
 
-@media screen and (min-width: 992px) {
-  /* line 190, sass/pages/_home-page.scss */
-  .contact {
-    height: 400px !important; }
-  /* line 195, sass/pages/_home-page.scss */
-  .main-options div {
-    max-width: 380px;
-    margin: 20px; } }
+@media (min-width: 768px) {
+  /* line 211, sass/pages/_home-page.scss */
+  header {
+    height: auto !important; }
+  /* line 216, sass/pages/_home-page.scss */
+  #options-container .warehouse {
+    margin-bottom: 0px !important; }
+  /* line 222, sass/pages/_home-page.scss */
+  #contact h3 {
+    margin-top: 30px !important;
+    font-size: 2.5rem; }
+  /* line 228, sass/pages/_home-page.scss */
+  #contact form .message-input {
+    height: 200px !important;
+    margin: 20px 0; } }
 
-@media screen and (min-width: 1200px) {
-  /* line 204, sass/pages/_home-page.scss */
-  .main-options div {
-    max-width: 270px;
-    margin: 20px 0px; } }
+@media (min-width: 992px) {
+  /* line 238, sass/pages/_home-page.scss */
+  #map {
+    margin-left: 12px !important;
+    margin-top: 20px !important; }
+  /* line 243, sass/pages/_home-page.scss */
+  .option {
+    width: 22% !important; }
+  /* line 247, sass/pages/_home-page.scss */
+  #contact {
+    border: 2px solid black;
+    margin-top: 20px !important; } }
+
+@media (min-width: 1200px) {
+  /* line 254, sass/pages/_home-page.scss */
+  .about-us {
+    gap: 70px !important; } }

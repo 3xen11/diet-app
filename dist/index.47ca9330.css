@@ -156,165 +156,259 @@ body {
   background-image: url("https://images.pexels.com/photos/6942034/pexels-photo-6942034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
 }
 
-.container {
+body .wrapper {
   background-color: #fff;
-}
-
-.container .navigation-mobile {
-  height: 40px;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
   display: flex;
 }
 
-.container .navigation-mobile .logo {
-  width: 40%;
-  background-color: #ff0;
-}
-
-.container .navigation-mobile .hamburger-menu {
-  width: 60%;
-  justify-content: flex-end;
-  display: flex;
-}
-
-.container .navigation-mobile .container-menu {
-  width: 60%;
-  flex-direction: row;
-  justify-content: space-around;
-  display: flex;
-}
-
-.container .navigation {
+body .wrapper nav {
   height: 60px;
-  justify-content: space-between;
 }
 
-.container .navigation .logo {
-  width: 10%;
-  background-color: #ff0;
-}
-
-.container .navigation .container-menu {
-  width: 60%;
-  justify-content: space-around;
-  margin-top: auto;
-  display: flex;
-}
-
-.container .navigation .container-menu .menu-item {
-  list-style: none;
-}
-
-.container .navigation .container-menu .menu-item a:link {
-  text-decoration: none;
-}
-
-.container #carouselExampleControls {
-  width: 102%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.container .main-options {
+body .wrapper nav .mobile-nav {
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   display: flex;
 }
 
-.container .main-options div {
-  border: 2px solid #000;
-  border-radius: 50px;
-  margin: 20px;
+body .wrapper nav .mobile-nav .logo {
+  justify-content: space-between;
+  display: flex;
+}
+
+body .wrapper nav .mobile-nav .logo img {
+  width: 55px;
+}
+
+body .wrapper nav .mobile-nav .menu {
+  text-align: right;
+  line-height: 60px;
+}
+
+body .wrapper header {
+  height: calc(100vh - 60px);
+}
+
+body .wrapper header .motto-photo {
+  background-image: url("https://images.pexels.com/photos/1400172/pexels-photo-1400172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+body .wrapper header .motto-photo .motto {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body .wrapper header .carousel {
   padding: 0;
 }
 
-.container .main-options div img {
-  width: 40%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+body .wrapper #options-container {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+  display: flex;
 }
 
-.container .main-options .diet {
-  height: 30vh;
-  max-height: 300px;
-  background-color: #0ff;
-}
-
-.container .main-options .shop-list {
-  height: 30vh;
-  max-height: 300px;
-  background-color: #639;
-}
-
-.container .main-options .meals {
-  height: 30vh;
-  max-height: 300px;
-  background-color: #4169e1;
-}
-
-.container .main-options .warehouse {
-  height: 30vh;
-  max-height: 300px;
-  background-color: green;
-}
-
-.container .motto {
+body .wrapper #options-container .option {
   height: 200px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
 }
 
-.container .motto h3 {
+body .wrapper #options-container .option a {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+body .wrapper #options-container .option a img {
+  height: 50%;
+}
+
+body .wrapper #options-container .option a span {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body .wrapper #options-container .warehouse {
+  margin-bottom: 20px;
+}
+
+body .wrapper .articles {
+  margin-top: 100px;
+}
+
+body .wrapper .articles .article-photo {
+  padding: 0;
+}
+
+body .wrapper .articles .articles-container {
+  background-color: red;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+body .wrapper .articles .articles-container .hwdp h3 {
   text-align: center;
-  line-height: 240px;
+  margin: 20px 0;
 }
 
-.container .contacts .contact {
-  height: 200px;
-  background-color: gray;
+body .wrapper .articles .articles-container .hwdp ul {
+  list-style: none;
 }
 
-.container .contacts .map {
+body .wrapper .articles .articles-container .hwdp ul li {
+  line-height: 40px;
+}
+
+body .wrapper .articles .articles-container .hwdp ul li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body .wrapper .articles .articles-container .articles-more {
+  width: 100%;
+  color: #000;
+  justify-content: flex-end;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+}
+
+body .wrapper .articles .articles-container .articles-more span {
+  margin: 20px;
+}
+
+body .wrapper .contest {
+  margin-top: 100px;
+}
+
+body .wrapper .contest img {
+  padding: 0;
+}
+
+body .wrapper .about-us {
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+  display: flex;
+}
+
+body .wrapper .about-us .aboutus-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+body .wrapper .about-us .employee {
+  flex-direction: column;
+  display: flex;
+}
+
+body .wrapper .about-us .employee span {
+  text-align: center;
+  margin: 10px 0 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+body .wrapper #contact h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+body .wrapper #contact form {
+  flex-direction: column;
+  display: flex;
+}
+
+body .wrapper #contact form label {
+  margin-top: 20px;
+}
+
+body .wrapper #contact form input {
+  height: 2.5rem;
+  border-radius: 10px;
+}
+
+body .wrapper #contact form .message-input {
+  height: 100px;
+  margin: 20px 0;
+}
+
+body .wrapper #contact form .submit-button {
+  margin: 0 auto 20px;
+}
+
+body .wrapper #map {
+  height: 65vh;
   background-color: brown;
 }
 
-.container .footer {
-  min-height: 50px;
+body footer {
+  color: #fff;
+  height: 40px;
+  background-color: #000;
 }
 
-@media screen and (min-width: 768px) {
-  .slider {
-    max-height: 500px;
-    height: 50vh !important;
-  }
-
-  .motto {
-    height: 250px !important;
-  }
-
-  .contact {
-    height: 350px !important;
-  }
+body footer span {
+  text-align: center;
+  line-height: 40px;
 }
 
-@media screen and (min-width: 992px) {
-  .contact {
-    height: 400px !important;
+@media (min-width: 768px) {
+  header {
+    height: auto !important;
   }
 
-  .main-options div {
-    max-width: 380px;
-    margin: 20px;
+  #options-container .warehouse {
+    margin-bottom: 0 !important;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .main-options div {
-    max-width: 270px;
+  #contact h3 {
+    font-size: 2.5rem;
+    margin-top: 30px !important;
+  }
+
+  #contact form .message-input {
     margin: 20px 0;
+    height: 200px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #map {
+    margin-top: 20px !important;
+    margin-left: 12px !important;
+  }
+
+  .option {
+    width: 22% !important;
+  }
+
+  #contact {
+    border: 2px solid #000;
+    margin-top: 20px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+    gap: 70px !important;
   }
 }
 

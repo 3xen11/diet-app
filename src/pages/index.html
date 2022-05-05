@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
@@ -12,99 +13,144 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="../scripts/script.js" type="module" defer></script>
+    <script src="https://kit.fontawesome.com/260c4d291c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../sass/pages/_home-page.scss">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="navigation-mobile d-md-none row">
-            <img src="#" alt="logo" class="logo">
-            <div class="hamburger-menu"> <span class="menu">XXX</span></div>
-            <!-- <ul class="container-menu">
-                    <li class="menu-item"><a href="#">menu1</a></li>
-                    <li class="menu-item"><a href="#">menu2</a></li>
-                    <li class="menu-item"><a href="#">menu3</a></li>
-                    <li class="menu-item"><a href="#">menu4</a></li>
-                    <li class="menu-item"><a href="#">menu5</a></li>
-                </ul> -->
-        </div>
-
-        <div class="navigation d-none d-md-flex row">
-            <img src="#" alt="logo" class="logo">
-            <ul class="container-menu">
-                <li class="menu-item"><a href="#">menu1</a></li>
-                <li class="menu-item"><a href="#">menu2</a></li>
-                <li class="menu-item"><a href="#">menu3</a></li>
-                <li class="menu-item"><a href="#">menu4</a></li>
-                <li class="menu-item"><a href="#">menu5</a></li>
-            </ul>
-        </div>
 
 
-        <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
-            <div class="carousel-inner ">
-                <div class="carousel-item active">
-                    <img src="../img/spider.jpg" class="d-block w-100" alt="#">
+
+
+    <div class="container wrapper">
+
+        <nav class="row col-12">
+            <div class="mobile-nav row">
+                <div class="logo col-5"><img src="../img/logo.png" alt="logo"></div>
+                <i class="fa-solid fa-bars menu col-7"></i>
+            </div>
+
+        </nav>
+
+        <header class="row col-12">
+            <div class="motto-photo col-12 d-md-none">
+                <h3 class="col-12 motto">Nie bądź ulańcem</h3>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="../img/spider.jpg" class="d-block w-100" alt="#">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/spider-1.jpg" class="d-block w-100" alt="#">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/spider.jpg" class="d-block w-100" alt="#">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/spider-1.jpg" class="d-block w-100" alt="#">
+                <button class="carousel-control-prev carousel-btn" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next carousel-btn" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+
+        <section id="options-container" class="row col-12">
+
+            <div class="diet option col-9 col-md-5 col-lg-2"> <a href="../pages/diet.html"><img
+                        src="../img/icons/diet.png" alt=""><span>dieta</span></a> </div>
+
+            <div class="meals option col-9 col-md-5 col-lg-2"> <a href="#"><img src="../img/icons/meals.png"
+                        alt=""><span>posiłki</span></a> </div>
+
+            <div class="shop-list option col-9 col-md-5 col-lg-2"> <a href="#"><img src="../img/icons/shop-list.png"
+                        alt=""><span>lista zakupów</span></a> </div>
+
+            <div class="warehouse option col-9 col-md-5 col-lg-2"> <a href="#"><img src="../img/icons/warehouse.png"
+                        alt=""><span>magazyn</span></a> </div>
+
+        </section>
+
+        <article class="row articles col-12">
+
+            <img class="article-photo d-none d-md-block col-md-6" src="../img/spider-1.jpg" alt="zdjęcie artykułu">
+            <div class="articles-container col-12 col-md-6">
+
+                <div class="col-12 hwdp">
+                    <h3>Nowe artykuły</h3>
+                    <ul>
+                        <li class="article-title"> <a href="#">lorem ipsum <span>- Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit.</span></a></li>
+                        <li class="article-title"> <a href="#">lorem ipsum <span>- Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit.</span></a></li>
+
+
+                    </ul>
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/spider.jpg" class="d-block w-100" alt="#">
-                </div>
+
+                <a href="#" class="articles-more col-12"><span>czytaj dalej...</span></a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </article>
 
-
-        <div class="row main-options">
-            <div class="col-9 col-md-5  diet"> <img src="../img/icons/diet.png" alt="fotka">
-                <!-- <span>Plan posiłków</span> -->
-
+        <section class="row contest col-12">
+            <div class="title">
+                HWDP
             </div>
-            <div class="col-9 col-md-5  shop-list"> <img src="../img/icons/shop-list.png" alt="fotka">
-                <!-- <span>Lista zakupów</span> -->
+        </section>
 
+
+
+        <aside class="row about-us col-12">
+
+            <h3 class="aboutus-title">Nasz zespół:</h3>
+            <div class="employee col-7 col-md-3">
+                <img src="../img/employees/jan.jpg" alt="zdjęcie pracownika" class="employee-photo col-12 ">
+                <span class="employee-name col-12 ">Jan</span>
             </div>
-            <div class="col-9 col-md-5  meals"> <img src="../img/icons/meals.png" alt="fotka">
-                <!-- <span>Posiłki</span> -->
 
+            <div class="employee col-7 col-md-3">
+                <img src="../img/employees/maria.jpg" alt="zdjęcie pracownika" class="employee-photo col-12 ">
+                <span class="employee-name col-12 ">Maria</span>
             </div>
-            <div class="col-9 col-md-5  warehouse"> <img src="../img/icons/warehouse.png" alt="fotka">
-                <!-- <span>Magazyn</span> -->
 
+            <div class="employee col-7 col-md-3">
+                <img src="../img/employees/kamil.jpg" alt="zdjęcie pracownika" class="employee-photo col-12 ">
+                <span class="employee-name col-12 ">Kamil</span>
             </div>
-        </div>
 
+        </aside>
 
-        <div class="row">
-            <div class="col-12 motto">
-                <h3>NIE BĄDŹ ULAŃCEM</h3>
-            </div>
-        </div>
+        <section id="contact" class="row col-12 col-lg-6">
+            <h3>Skontakuj się z nami:</h3>
+            <form action="">
+                <label>Wpisz imię</label>
+                <input type="text" class="name-input col-8 col-md-5 col-lg-7">
+                <label>Wpisz e-mail</label>
+                <input type="email" class="mail-input col-8 col-md-5 col-lg-7">
+                <input type="text" class="message-input col-12" placeholder="wpisz wiadomość">
+                <button type="button" class="submit-button btn col-6 btn-primary">Wyślij</button>
+            </form>
+        </section>
 
+        <section id="map" class="row col-12 col-lg-6">
+            <div class="div">mapa</div>
+        </section>
 
-        <div class="row contacts">
-            <div class="col-12 col-md-5 contact">kontakt</div>
-            <div class="d-none d-md-block col-md-7 map">mapa api</div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-12 footer">stopka</div>
-        </div>
+        <footer class="row col-12">
+            <span>Dawid Dardziński</span>
+        </footer>
 
     </div>
 </body>

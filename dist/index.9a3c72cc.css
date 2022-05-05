@@ -1,0 +1,275 @@
+nav {
+  height: 60px;
+  background-color: #fff;
+}
+
+nav .mobile-nav {
+  flex-direction: row;
+  display: flex;
+}
+
+nav .mobile-nav .logo {
+  justify-content: space-between;
+  display: flex;
+}
+
+nav .mobile-nav .logo img {
+  width: 55px;
+}
+
+nav .mobile-nav .menu {
+  text-align: right;
+  line-height: 60px;
+}
+
+footer {
+  color: #fff;
+  height: 40px;
+  background-color: #000;
+}
+
+footer span {
+  text-align: center;
+  line-height: 40px;
+}
+
+.wrapper {
+  background-color: #11111184;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  display: flex;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/6942034/pexels-photo-6942034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+
+body header {
+  height: calc(100vh - 60px);
+}
+
+body header .motto-photo {
+  background-image: url("https://images.pexels.com/photos/1400172/pexels-photo-1400172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+body header .motto-photo .motto {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body header .carousel {
+  padding: 0;
+}
+
+body #options-container {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+  display: flex;
+}
+
+body #options-container .option {
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+body #options-container .option a {
+  color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+body #options-container .option a img {
+  height: 50%;
+}
+
+body #options-container .option a span {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body #options-container .warehouse {
+  margin-bottom: 20px;
+}
+
+body .articles {
+  margin-top: 100px;
+}
+
+body .articles .article-photo {
+  padding: 0;
+}
+
+body .articles .articles-container {
+  background-color: red;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+body .articles .articles-container .hwdp h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+body .articles .articles-container .hwdp ul {
+  list-style: none;
+}
+
+body .articles .articles-container .hwdp ul li {
+  line-height: 40px;
+}
+
+body .articles .articles-container .hwdp ul li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body .articles .articles-container .articles-more {
+  width: 100%;
+  color: #000;
+  justify-content: flex-end;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+}
+
+body .articles .articles-container .articles-more span {
+  margin: 20px;
+}
+
+body .contest {
+  min-height: 50vh;
+  width: 100%;
+  background: 50% / cover;
+  margin-top: 100px;
+  position: relative;
+}
+
+body .contest .title {
+  background-image: url("spider-1.9edab0f3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+body .about-us {
+  justify-content: center;
+  gap: 30px;
+  margin-top: 100px;
+  display: flex;
+}
+
+body .about-us .aboutus-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+body .about-us .employee {
+  flex-direction: column;
+  display: flex;
+}
+
+body .about-us .employee img {
+  border-radius: 50%;
+}
+
+body .about-us .employee span {
+  text-align: center;
+  margin: 10px 0 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+body #contact h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+body #contact form {
+  flex-direction: column;
+  display: flex;
+}
+
+body #contact form label {
+  margin-top: 20px;
+}
+
+body #contact form input {
+  height: 2.5rem;
+  border-radius: 10px;
+}
+
+body #contact form .message-input {
+  height: 100px;
+  margin: 20px 0;
+}
+
+body #contact form .submit-button {
+  margin: 0 auto 20px;
+}
+
+body #map {
+  height: 65vh;
+  background-color: brown;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: auto !important;
+  }
+
+  #options-container .warehouse {
+    margin-bottom: 0 !important;
+  }
+
+  #contact h3 {
+    font-size: 2.5rem;
+    margin-top: 30px !important;
+  }
+
+  #contact form .message-input {
+    margin: 20px 0;
+    height: 200px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #map {
+    margin-top: 20px !important;
+    margin-left: 12px !important;
+  }
+
+  .option {
+    width: 22% !important;
+  }
+
+  #contact {
+    border: 2px solid #000;
+    margin-top: 20px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+    gap: 70px !important;
+  }
+}
+
+/*# sourceMappingURL=index.9a3c72cc.css.map */

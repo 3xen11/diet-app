@@ -1,210 +1,257 @@
+@use "../components/navigation";
+@use "../components/footer";
+@use "../components/wrapper";
+
 body {
     background-image: url("https://images.pexels.com/photos/6942034/pexels-photo-6942034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-}
 
-.container {
-    background-color: white;
+    header {
+        height: calc(100vh - 60px);
 
-    .navigation-mobile {
+        .motto-photo {
+            background-image: url("https://images.pexels.com/photos/1400172/pexels-photo-1400172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 
-        height: 40px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-
-        .logo {
-            background-color: yellow;
-            width: 40%;
-        }
-
-        .hamburger-menu {
-
-            width: 60%;
-            display: flex;
-            justify-content: flex-end;
-
-            .menu {}
-
-        }
-
-        .container-menu {
-            width: 60%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-
-            .menu-item {}
-
-        }
-    }
-
-    .navigation {
-
-        height: 60px;
-        justify-content: space-between;
-
-
-        .logo {
-            background-color: yellow;
-            width: 10%;
-        }
-
-        .container-menu {
-            width: 60%;
-            display: flex;
-            margin-top: auto;
-            justify-content: space-around;
-
-
-
-            .menu-item {
-                list-style: none;
-
-
-            }
-
-            .menu-item a:link {
-                text-decoration: none;
-            }
-
-        }
-    }
-
-
-    #carouselExampleControls {
-        width: 102%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%)
-    }
-
-    .main-options {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-
-
-
-        div {
-            margin: 20px;
-            border: 2px solid black;
-            border-radius: 50px;
-            padding: 0;
-
-
-            img {
-                width: 40%;
+            .motto {
                 position: relative;
                 top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateY(-50%);
+                font-size: 2.5rem;
+                text-align: center;
+                color: white;
             }
         }
 
-
-
-        .diet {
-            background-color: aqua;
-            height: 30vh;
-            max-height: 300px;
-
-            img {}
+        .carousel {
+            padding: 0;
         }
+    }
 
-        .shop-list {
-            background-color: rebeccapurple;
-            height: 30vh;
-            max-height: 300px;
+    #options-container {
 
-            img {}
-        }
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        margin-top: 100px;
 
-        .meals {
-            background-color: royalblue;
-            height: 30vh;
-            max-height: 300px;
+        .option {
+            background-color: white;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 20px;
 
-            img {}
+            display: flex;
+            justify-content: center;
+
+            a {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: black;
+
+                img {
+                    height: 50%;
+                }
+
+                span {
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+
+
         }
 
         .warehouse {
-            background-color: green;
-            height: 30vh;
-            max-height: 300px;
-
-            img {}
+            margin-bottom: 20px;
         }
     }
 
+    .articles {
+        margin-top: 100px;
+
+
+        .article-photo {
+            padding: 0;
+        }
+
+        .articles-container {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .hwdp {
+                h3 {
+                    text-align: center;
+                    margin: 20px 0;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        line-height: 40px;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+
+            .articles-more {
+                display: flex;
+                width: 100%;
+                text-decoration: none;
+
+                color: black;
+                font-weight: bold;
+                justify-content: flex-end;
+
+                span {
+                    margin: 20px 20px;
+                }
+            }
+        }
+    }
+
+    .contest {
+        margin-top: 100px;
+        position: relative;
+        min-height: 50vh;
+        width: 100%;
+        background: 50% 50% / cover;
 
 
 
-    .motto {
-        height: 200px;
-        // background-color: rgb(6, 168, 46);
+        .title {
+            padding: 0;
+            background-image: url("../../src/img/spider-1.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }
+
+    .about-us {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        gap: 30px;
+
+        .aboutus-title {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .employee {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                border-radius: 50%;
+            }
+
+            span {
+                text-align: center;
+                font-weight: bold;
+                margin: 10px 0 30px 0;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    #contact {
 
         h3 {
+            margin-top: 20px;
             text-align: center;
-            line-height: 240px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-top: 20px;
+            }
+
+            input {
+                border-radius: 10px;
+                height: 2.5rem;
+            }
+
+            .message-input {
+                height: 100px;
+                margin: 20px 0;
+            }
+
+            .submit-button {
+                margin: 0 auto 20px auto;
+            }
         }
     }
 
-    .contacts {
-        .contact {
-            height: 200px;
-            background-color: gray;
-        }
-
-        .map {
-            background-color: brown;
-        }
-    }
-
-
-    .footer {
-        min-height: 50px;
+    #map {
+        height: 65vh;
+        background-color: brown;
     }
 }
 
 
-@media screen and (min-width: 768px) {
-    .slider {
-        height: 50vh !important;
-        max-height: 500px;
+
+@media (min-width: 768px) {
+    header {
+        height: auto !important;
     }
 
-    .motto {
-        height: 250px !important;
+    #options-container {
+        .warehouse {
+            margin-bottom: 0px !important;
+        }
     }
 
-    .contact {
-        height: 350px !important;
-    }
-}
+    #contact {
+        h3 {
+            margin-top: 30px !important;
+            font-size: 2.5rem;
+        }
 
-
-@media screen and (min-width: 992px) {
-
-    .contact {
-        height: 400px !important;
-    }
-
-    .main-options {
-        div {
-            max-width: 380px;
-            margin: 20px;
+        form {
+            .message-input {
+                height: 200px !important;
+                margin: 20px 0;
+            }
         }
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .main-options {
-        div {
-            max-width: 270px;
-            margin: 20px 0px;
 
-        }
+@media (min-width: 992px) {
+    #map {
+        margin-left: 12px !important;
+        margin-top: 20px !important;
+    }
+
+    .option {
+        width: 22% !important;
+    }
+
+    #contact {
+        border: 2px solid black;
+        margin-top: 20px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-us {
+        gap: 70px !important;
     }
 }

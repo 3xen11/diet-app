@@ -1,0 +1,23 @@
+nav {
+    height: 60px;
+    background-color: white;
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: row;
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 55px;
+            }
+        }
+
+        .menu {
+            text-align: right;
+            line-height: 60px;
+        }
+    }
+}
